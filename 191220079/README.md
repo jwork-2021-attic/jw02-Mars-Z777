@@ -29,7 +29,11 @@
 
 2. 快速排序可视化：
 
-   [![asciicast](https://asciinema.org/a/437824.svg)](https://asciinema.org/a/437824)
+   [![asciicast](https://asciinema.org/a/Dlk5jyfMFkk5lKmkRy279VoBG.svg)](https://asciinema.org/a/Dlk5jyfMFkk5lKmkRy279VoBG)
+
+3. 选择排序可视化：
+
+   [![asciicast](https://asciinema.org/a/89rP6Po70JkBOcQFveOXG5C6k.svg)](https://asciinema.org/a/89rP6Po70JkBOcQFveOXG5C6k)
 
    
 
