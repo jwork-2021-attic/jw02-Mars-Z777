@@ -26,7 +26,7 @@ public class Scene {
 		
 		
 		Snake theSnake = Snake.getSnake();
-		Sorter sorter = new QuickSorter();
+		Sorter sorter = new QuickSorter(); // or ChooseSorter
 		theSnake.getSorter(sorter);
 		
 		String log = theSnake.lineUp(line);
