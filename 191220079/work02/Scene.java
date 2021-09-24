@@ -31,10 +31,10 @@ public class Scene {
 		
 		String log = theSnake.lineUp(line);
 		BufferedWriter writer;
-        writer = new BufferedWriter(new FileWriter("result.txt"));
-        writer.write(log);
-        writer.flush();
-        writer.close();
+		writer = new BufferedWriter(new FileWriter("result.txt"));
+		writer.write(log);
+		writer.flush();
+		writer.close();
 	}
 
 }
