@@ -40,11 +40,44 @@
 
 ## 任务三
 
-将上一任务中自己写的代码，改为“蛇精指挥256个小妖怪站成一个16x16方阵“的场景。要求：
+修改代码：修改Line.java中对toString()的重载，具体为将
 
-1. 对上一任务中代码的修改应尽量小；
-2. 每个小妖怪具有一种独特的颜色；
-3. 初始状态下小妖怪随机站成16x16方阵；
-4. 实现至少两种排序算法，将小妖怪按其颜色值排序；
-5. 如示例代码一样将排序过程可视化；
-6. 在自己的`Readme.md`中画出相应类图，并添加可视化结果展示链接。
+```java
+@Override
+public String toString() {
+    String lineString = "";
+    for (Position p : positions) {
+        lineString += p.linable.toString();
+    }
+    return lineString;
+}
+```
+
+修改为
+
+```java
+@Override
+public String toString() {
+    String lineString = "";
+    int i = 0;
+    for (Position p : positions) {
+        lineString += p.linable.toString();
+        i++;
+        if(i % 8 == 0)
+        	lineString += "\n";
+    }
+    return lineString;
+}
+```
+
+1. 类图：
+
+   ![](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/jwork-2021/jw02-Mars-Z777/master/191220079/uml/task2_characters.pu)
+
+2. 快速排序可视化：
+
+   [![asciicast](https://asciinema.org/a/437839.svg)](https://asciinema.org/a/437839)
+
+3. 选择排序可视化：
+
+   [![asciicast](https://asciinema.org/a/437840.svg)](https://asciinema.org/a/437840)
