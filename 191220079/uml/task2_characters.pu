@@ -1,0 +1,87 @@
+@startuml
+class Color [[java:work02.Color]] {
+	-image: BufferedImage
+	~Color(name: String)
+	+formColorTable(): int[]
+}
+class ChooseSorter [[java:work02.ChooseSorter]] {
+	-a: int[]
+	-plan: String
+	-swap(i: int, j: int): void
+	-maxIndex(size: int): int
+	+load(content: int[]): void
+	+sort(): void
+	+getPlan(): String
+}
+interface Sorter {
+}
+Sorter <|.. ChooseSorter
+interface Sorter [[java:work02.Sorter]] {
+	load(content: int[]): void
+	sort(): void
+	getPlan(): String
+}
+class QuickSorter [[java:work02.QuickSorter]] {
+	-a: int[]
+	-plan: String
+	-swap(i: int, j: int): void
+	-sortHelper(left: int, right: int): void
+	+load(content: int[]): void
+	+sort(): void
+	+getPlan(): String
+}
+interface Sorter {
+}
+Sorter <|.. QuickSorter
+class Scene [[java:work02.Scene]] {
+	+{static} main(args: String[]): void
+}
+class Monster [[java:work02.Monster]] {
+	-r: int
+	-g: int
+	-b: int
+	-rank: int
+	-position: Position
+	+{static} values: ArrayList<Monster>
+	~Monster(r: int, g: int, b: int, rank: int)
+	+{static} getMonsterByRank(rank: int): Monster
+	+toString(): String
+	+setPosition(position: Position): void
+	+getPosition(): Position
+	+swapPosition(another: Monster): void
+	+getValue(): int
+}
+interface Linable {
+}
+Linable <|.. Monster
+class Line [[java:work02.Line]] {
+	-positions: Position[]
+	+Line(length: int)
+	+put(linable: Linable, i: int): void
+	+get(i: int): Linable
+	+toString(): String
+}
+class Linable {
+}
+Line --> "*" Linable : toArray()
+interface Linable [[java:work02.Linable]] {
+	setPosition(position: Position): void
+	getPosition(): Position
+	getValue(): int
+}
+class RandomArray [[java:work02.RandomArray]] {
+	+{static} randomArray(a: int[]): int[]
+}
+class Snake [[java:work02.Snake]] {
+	-{static} theSnake: Snake
+	-Snake()
+	+{static} getSnake(): Snake
+	+getSorter(s: Sorter): void
+	+lineUp(line: Line): String
+	-parsePlan(plan: String): String[]
+	-execute(step: String): void
+}
+class Sorter {
+}
+Snake --> "1" Sorter : sorter
+@enduml

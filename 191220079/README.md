@@ -23,13 +23,13 @@
 
 ## 任务二
 
-参考示例代码，设计自己的类型并完成“蛇精指挥256个小妖怪站成一队“的场景。要求：
+1. 类图：
 
-1. 每个小妖怪具有一种独特的颜色；
-2. 初始状态下小妖怪随机站成一队；
-3. 实现至少两种排序算法，将小妖怪按其颜色值排序；
-4. 如示例代码一样将排序过程可视化；
-5. 在自己的`Readme.md`中画出相应类图，并添加可视化结果展示链接。
+   ![](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/jwork-2021/jw02-Mars-Z777/master/191220079/uml/task2_characters.pu)
+
+2. 快速排序可视化：
+
+![asciicast](https://asciinema.org/a/437824.svg)
 
 
 ## 任务三
