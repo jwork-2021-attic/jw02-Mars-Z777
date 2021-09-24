@@ -1,0 +1,33 @@
+@startuml
+
+actor 大娃 as one #Red
+actor 二娃 as two #Orange
+actor 三娃 as three #Yellow
+actor 四娃 as four #Green
+actor 五娃 as five #Blue
+actor 六娃 as six #Cyan
+actor 七娃 as seven #Purple
+
+seven <-[#Black]> five : 交换位置
+seven <-[#Black]> two : 交换位置
+seven <-[#Black]> six : 交换位置
+seven <-[#Black]> four : 交换位置
+seven <-[#Black]> one : 交换位置
+
+five <-[#Black]> two : 交换位置
+
+six <-[#Black]> four : 交换位置
+six <-[#Black]> one : 交换位置
+
+three <-[#Black]> two : 交换位置
+
+five <-[#Black]> four : 交换位置
+five <-[#Black]> one : 交换位置
+
+four <-[#Black]> one : 交换位置
+
+three <-[#Black]> one : 交换位置
+
+two <-[#Black]> one : 交换位置
+
+@enduml
