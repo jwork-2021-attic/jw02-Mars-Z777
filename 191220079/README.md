@@ -29,7 +29,9 @@
 
 2. 快速排序可视化：
 
-![asciicast](https://asciinema.org/a/437824.svg)
+   [![asciicast](https://asciinema.org/a/437824.svg)](https://asciinema.org/a/437824)
+
+   
 
 
 ## 任务三
