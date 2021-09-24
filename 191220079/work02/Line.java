@@ -40,7 +40,7 @@ public class Line {
 
     @Override
     public String toString() {
-        String lineString = "\t";
+        String lineString = "";
         for (Position p : positions) {
             lineString += p.linable.toString();
         }
