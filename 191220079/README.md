@@ -5,7 +5,13 @@
 
 1. 用plantuml画出example的类图与Scene中main方法执行过程中的对象时序图；
 
-   
+   example类图：
+
+   ![](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/jwork-2021/jw02-Mars-Z777/master/191220079/uml/example_characters.pu)
+
+   example时序图：
+
+   ![](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/jwork-2021/jw02-Mars-Z777/master/191220079/uml/example_timeline.pu)
 
 2. 尝试从面向对象编程角度理解`example`的设计理念，具体阐述这样写的好处与可改进之处（越详细越好）；
 

@@ -1,33 +1,33 @@
 @startuml
 
-actor 大娃 as one #Red
-actor 二娃 as two #Orange
-actor 三娃 as three #Yellow
-actor 四娃 as four #Green
-actor 五娃 as five #Blue
-actor 六娃 as six #Cyan
-actor 七娃 as seven #Purple
+actor 澶у▋ as one #Red
+actor 浜屽▋ as two #Orange
+actor 涓夊▋ as three #Yellow
+actor 鍥涘▋ as four #Green
+actor 浜斿▋ as five #Blue
+actor 鍏▋ as six #Cyan
+actor 涓冨▋ as seven #Purple
 
-seven <-[#Black]> five : 交换位置
-seven <-[#Black]> two : 交换位置
-seven <-[#Black]> six : 交换位置
-seven <-[#Black]> four : 交换位置
-seven <-[#Black]> one : 交换位置
+seven <-[#Black]> five : 浜ゆ崲浣嶇疆
+seven <-[#Black]> two : 浜ゆ崲浣嶇疆
+seven <-[#Black]> six : 浜ゆ崲浣嶇疆
+seven <-[#Black]> four : 浜ゆ崲浣嶇疆
+seven <-[#Black]> one : 浜ゆ崲浣嶇疆
 
-five <-[#Black]> two : 交换位置
+five <-[#Black]> two : 浜ゆ崲浣嶇疆
 
-six <-[#Black]> four : 交换位置
-six <-[#Black]> one : 交换位置
+six <-[#Black]> four : 浜ゆ崲浣嶇疆
+six <-[#Black]> one : 浜ゆ崲浣嶇疆
 
-three <-[#Black]> two : 交换位置
+three <-[#Black]> two : 浜ゆ崲浣嶇疆
 
-five <-[#Black]> four : 交换位置
-five <-[#Black]> one : 交换位置
+five <-[#Black]> four : 浜ゆ崲浣嶇疆
+five <-[#Black]> one : 浜ゆ崲浣嶇疆
 
-four <-[#Black]> one : 交换位置
+four <-[#Black]> one : 浜ゆ崲浣嶇疆
 
-three <-[#Black]> one : 交换位置
+three <-[#Black]> one : 浜ゆ崲浣嶇疆
 
-two <-[#Black]> one : 交换位置
+two <-[#Black]> one : 浜ゆ崲浣嶇疆
 
 @enduml
