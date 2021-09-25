@@ -40,35 +40,32 @@
 
 ## 任务三
 
-修改代码：修改Line.java中对toString()的重载，具体为将
+修改代码：将Line类中的Position[] positions和内部类的Linable linable由private改为protected，并添加Line的子类Matrix，具体代码如下：
 
 ```java
-@Override
-public String toString() {
-    String lineString = "";
-    for (Position p : positions) {
-        lineString += p.linable.toString();
+public class Matrix extends Line {
+	
+	Matrix(int length){
+		super(length);
+	}
+	
+	@Override
+    public String toString() {
+        String lineString = "";
+        int i = 0;
+        for (Position p : positions) {
+            lineString += p.linable.toString();
+            i++;
+            if(i % 8 == 0)
+            	lineString += "\n";
+        }
+        return lineString;
     }
-    return lineString;
+	
 }
 ```
 
-修改为
 
-```java
-@Override
-public String toString() {
-    String lineString = "";
-    int i = 0;
-    for (Position p : positions) {
-        lineString += p.linable.toString();
-        i++;
-        if(i % 8 == 0)
-        	lineString += "\n";
-    }
-    return lineString;
-}
-```
 
 1. 类图：
 

@@ -9,7 +9,8 @@ public class Scene {
 	public static void main(String[] args) throws IOException {
 	
 		int n = 64;
-		Line line = new Line(n);
+		//Line line = new Line(n);
+		Line line = new Matrix(n);
 		Color c = new Color("work02/c256.png");
 		int colors[] = c.formColorTable();
 		int index[] = new int[n];

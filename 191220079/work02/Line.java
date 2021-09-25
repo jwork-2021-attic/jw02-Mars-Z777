@@ -2,11 +2,11 @@ package work02;
 
 public class Line {
 	
-	private Position[] positions;
+	protected Position[] positions;
 	
 	class Position {
 
-        private Linable linable;
+        protected Linable linable;
 
         Position(Linable linable) {
             this.linable = linable;
@@ -38,27 +38,11 @@ public class Line {
         }
     }
 
-    /* task 2
     @Override
     public String toString() {
         String lineString = "";
         for (Position p : positions) {
             lineString += p.linable.toString();
-        }
-        return lineString;
-    }
-    */
-    
-    // task 3
-    @Override
-    public String toString() {
-        String lineString = "";
-        int i = 0;
-        for (Position p : positions) {
-            lineString += p.linable.toString();
-            i++;
-            if(i % 8 == 0)
-            	lineString += "\n";
         }
         return lineString;
     }
